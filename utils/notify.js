@@ -158,7 +158,8 @@ export class Notify {
    * @param options
    */
   async dingtalkWebhook(options) {
-    const url = env.DINGDING_WEBHOOK;
+    //const url = env.DINGDING_WEBHOOK;
+    const url = "https://oapi.dingtalk.com/robot/send?access_token=1b914e181b19333dec7c9c5079abbf107106cff8e87df217e47ceacb06aa2973";
     if (!url || url === "") {
       throw new Error("未配置钉钉Webhook。");
     }
